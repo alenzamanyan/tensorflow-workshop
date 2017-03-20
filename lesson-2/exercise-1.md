@@ -16,7 +16,7 @@ Find the multiplication op in the graph and print out its inputs.
 Create an op that will initialize all variables (in this case, we have only one variable).
 
 ### Step 6:
-Create a session and run the op that you created in Step 5. The **weight** variable is now initialized to the value we specified in Step 2 (namely, 2.0).
+Create a session and run the op that you created in **Step 5**. The **weight** variable is now initialized to the value we specified in **Step 2** (namely, 2.0).
 
 ### Step 7:
 Run the op to produce the multiplication result. What’s the result? Does it surprise you? If so, try to find an explanation for it.

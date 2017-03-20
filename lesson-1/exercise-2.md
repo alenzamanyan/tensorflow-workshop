@@ -19,4 +19,4 @@ As you can see, we don’t have the result of 2 * 3 yet. In order to evaluate th
 The * operator is translated into the TensorFlow multiply operation. Perform the same multiplication as you did in Step 3, but do so using the multiply operation explicitly ([documentation](https://www.tensorflow.org/api_docs/python/tf/multiply)). Store the operation in a Python variable called **tf_z**.
 
 ### Step 7:
-Run the graph again as you did in Step 5 to verify the result.
+Run the graph again as you did in **Step 5** to verify the result.

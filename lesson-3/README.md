@@ -4,13 +4,15 @@ You take tests all the time. Sometimes you study and do well. Other times, you p
 
 The first thing you need to do is gather some data. So for the next couple of weeks, you log the total number of hours studied for a test and the number of hours you slept the night before the test. Your data looks like this:
 
-# hours studied  |  hours slept  |  test score
-# --------------------------------------------
-#       10       |      7        |     97
-#        5       |      4        |     71
-#        8       |      3        |     74
-#        2       |      8        |     78
-#        4       |      8        |     90
-#        9       |      1        |     61
-#        6       |      8        |     95
-# --------------------------------------------
+```bash
+ hours studied  |  hours slept  |  test score
+---------------------------------------------
+       10       |      7        |     97
+        5       |      4        |     71
+        8       |      3        |     74
+        2       |      8        |     78
+        4       |      8        |     90
+        9       |      1        |     61
+        6       |      8        |     95
+---------------------------------------------
+```

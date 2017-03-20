@@ -7,9 +7,8 @@ Machine learning is no longer limited to academic environments or tech companies
 ## Goals of this workshop:
  - teach the fundamentals of machine learning
  - intuitive approach to some of the math concepts underlying machine learning
- - build computational graphs in TensorFlow
- - cover basic learning models
  - develop working knowledge of Python for TensorFlow
+ - build computational graphs in TensorFlow
  - introduction to neural networks
  - get excited about machine learning and TensorFlow
 
