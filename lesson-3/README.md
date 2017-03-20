@@ -6,11 +6,11 @@ The first thing you need to do is gather some data. So for the next couple of we
 
 # hours studied  |  hours slept  |  test score
 # --------------------------------------------
-#       10       |      7        |     95
+#       10       |      7        |     97
 #        5       |      4        |     71
-#        8       |      3        |     76
-#        2       |      8        |     87
+#        8       |      3        |     74
+#        2       |      8        |     78
 #        4       |      8        |     90
 #        9       |      1        |     61
-#        6       |      8        |     98
+#        6       |      8        |     95
 # --------------------------------------------
