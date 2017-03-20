@@ -1,4 +1,4 @@
-## Exercise 2: Simple arithmetic.
+## Exercise 2: Simple arithmetic
 
 ### Step 1:
 Define a TensorFlow constant and store the integer 2 in it ([documentation](https://www.tensorflow.org/versions/r0.10/api_docs/python/constant_op/constant_value_tensors#constant)). Assign it to the Python variable **x**.

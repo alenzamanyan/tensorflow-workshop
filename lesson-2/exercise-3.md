@@ -1,4 +1,4 @@
-## Exercise 3: Training a trivial model.
+## Exercise 3: Training a trivial model
 
 ### Step 1:
 Assume that we don’t know what the weight should be. But we do know what the end result should be. In other words, we know that this model should take in 3.2 and should produce 10.0. Define a constant with value 10.0, and assign it to the Python variable **output_** (note the underscore).
@@ -6,7 +6,7 @@ Assume that we don’t know what the weight should be. But we do know what the e
 ### Step 2:
 Now we need to define a loss function. This tells us how far we are from the correct output value given the current weight value. It will allow us to modify the weight value (initially, 2.0) to get closer to the known output (10.0). Here’s the loss function that we will use:
 
-<center>loss = (output - output_)<sup>2</sup></center>
+**loss = (output - output_)<sup>2</sup>**
 
 Stop and make sure you understand this loss function. For one thing, why do we square the difference? Create a Python variable named **loss** and set it equal to the square of the difference, as shown in the formula above.
 

@@ -1,4 +1,4 @@
-## Exercise 3: Inspect the graph ([documentation](https://www.tensorflow.org/api_docs/python/tf/multiply)).
+## Exercise 3: Inspect the graph ([documentation](https://www.tensorflow.org/api_docs/python/tf/multiply))
 
 ### Step 1:
 Get the default graph and store it in a Python variable. Call it **graph**.

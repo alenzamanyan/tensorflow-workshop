@@ -1,4 +1,4 @@
-## Exercise 1: Getting ready for visualization and training.
+## Exercise 1: Getting ready for training
 
 ### Step 1:
 Create a TensorFlow constant with value 3.6. Assign it to Python variable **input**.

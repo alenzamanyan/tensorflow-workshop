@@ -16,10 +16,13 @@ Run the session, passing it the constant as a fetch ([documentation](https://www
 
 ### Step 5:
 Open up a file (name it hello_world.py), and copy what you did in steps 1-4 into the file. You should be able to run the file from terminal using the following command:
+  
+```bash
+> python hello_world.py
+Hello, TensorFlow!
+```
 
-Note: The **> symbol** just indicates that we're running this in the unix shell. You do not need to type it in. Instead, you can start with the word **python**. This rule will apply for the rest of the workshop. Similarly, if you see **>>>**, that indicates that we are in the Python interactive mode.
-`> python hello_world.py`  
-`Hello, TensorFlow!`  
+**Note: The `>` symbol above just indicates that we're running this in the unix shell. You do not need to type it in. Instead, you can start with the word `python`. This rule will apply for the rest of the workshop. Similarly, if you see `>>>`, that indicates that we are in the Python interactive mode.**
 
 ### Step 6:
 Use "with" statement (context management) to define session in your script ([documentation](http://effbot.org/zone/python-with-statement.htm)). Re-run your script to make sure it still works.
