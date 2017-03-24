@@ -1,6 +1,6 @@
 ## Exercise 4: Tuning and Evaluation
 
-**Note: Don't forget about feed_dict in the steps below. The network doesn't have any built-in data, so you need to feed in data every time you try to fetch a result.
+**Note: Don't forget about feed_dict in the steps below. The network doesn't have any built-in data, so you need to feed in data every time you try to fetch a result.**
 
 ### Step 1:
 Compare the normalized output (**actual**) to the output that our neural network now computes based on the learned weights. Are the results close?

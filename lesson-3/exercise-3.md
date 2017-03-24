@@ -7,9 +7,9 @@ We've prepared the data and built the neural network. There's not much left to d
 ### Step 1:
 The loss function is going to be the sum of squared differences between the actual and predicted value for each example. Here is the formula:
 
-**loss = Σ(actual - predicted)<sup>2</sup>**
+**loss = (1/num_examples) * Σ(actual - predicted)<sup>2</sup>**
 
-In our case, the **actual** is the normalized output we set up in **Exercise 1**. The **predicted** output is the same as **activation_2** from **Exercise 2**.
+In our case, the **actual** is the normalized output we set up in **Exercise 1**. The **predicted** output is the same as **activation_2** from **Exercise 2**. **num_examples** is the number of examples in our dataset.
 
 Now, you may be thinking, "what's that Σ symbol?" This is sum over all examples. An easy way to compute this in tensorflow is using tf.reduce_sum ([documentation](https://www.tensorflow.org/api_docs/python/tf/reduce_sum)).
 
