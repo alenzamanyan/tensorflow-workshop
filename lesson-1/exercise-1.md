@@ -3,13 +3,13 @@
 As is customary, let's start with a basic "Hello, world!" example.
 
 ### Step 1:
-Import TensorFlow library.
+Import tensorflow library.
 
 ### Step 2:
-Create a constant TensorFlow operation to store your "Hello, world!" string ([documentation](https://www.tensorflow.org/versions/r0.10/api_docs/python/constant_op/constant_value_tensors#constant)).
+Create a constant tensorflow operation to store your "Hello, world!" string ([documentation](https://www.tensorflow.org/versions/r0.10/api_docs/python/constant_op/constant_value_tensors#constant)).
 
 ### Step 3:
-Create a TensorFlow session ([documentation](https://www.tensorflow.org/api_docs/python/tf/Session)).
+Create a tensorflow session ([documentation](https://www.tensorflow.org/api_docs/python/tf/Session)).
 
 ### Step 4:
 Run the session, passing it the constant as a fetch ([documentation](https://www.tensorflow.org/api_docs/python/tf/Session#run)).

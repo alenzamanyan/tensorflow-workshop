@@ -29,10 +29,10 @@ Use matrix multiplication to multiply the normalized input (from **Exercise 1**)
 Apply the sigmoid activation function to the weighted sums computed in **Step 4**. The function is the same across all the neurons, so we can just pass in the whole matrix and it will run the computation element-wise ([documentation](https://www.tensorflow.org/api_docs/python/tf/sigmoid)). Call the resulting tensor **activation_1**. **Okay, take a deep breath!**
 
 ### Step 6:
-Now, we're going to repeat **Steps 2 through 5** for the connections between the hidden layer and the output layer. Start with defining **weights_2** as a 2-dimensional TensorFlow variable. To determine the size in each dimension, go back and read the hint in **Step 2**.
+Now, we're going to repeat **Steps 2 through 5** for the connections between the hidden layer and the output layer. Start with defining **weights_2** as a 2-dimensional tensorflow variable. To determine the size in each dimension, go back and read the hint in **Step 2**.
 
 ### Step 7:
-Define **bias_2** as a TensorFlow variable like we did in **Step 3**. There's only 1 node in the output layer, so this variable should be 1-dimensional.
+Define **bias_2** as a tensorflow variable like we did in **Step 3**. There's only 1 node in the output layer, so this variable should be 1-dimensional.
 
 ### Step 8:
 Use matrix multiplication to multiply the output of the hidden layer (**activation_1**) by **weights_2**. Add **bias_2** to it and store it in **weighted_sums_2**. We're almost done with the neural network!

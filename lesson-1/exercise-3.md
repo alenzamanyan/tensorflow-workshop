@@ -10,7 +10,7 @@ Print out the names of all the operations in the graph. Note that the TensorFlow
 Print out each operation in full ([documentation](https://www.tensorflow.org/api_docs/python/tf/Graph#get_operation_by_name)). You can use the Python built-in print command ([documentation](https://docs.python.org/2/library/functions.html#print)). What do the operations look like? Make sure to understand all the parts of the [proto buffer](https://developers.google.com/protocol-buffers/?hl=en) that is printed out.
 
 ### Step 4:
-Create a new operation in the default graph and give it a TensorFlow name. Print out the operation.
+Create a new operation in the default graph and give it a tensorflow name. Print out the operation.
 
 ### Step 5:
 How many operations are in the default graph? How many are in **graph**? Is this what you would expect? Explain why.

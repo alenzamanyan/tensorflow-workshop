@@ -1,10 +1,10 @@
 ## Exercise 1: Getting ready for training
 
 ### Step 1:
-Create a TensorFlow constant with value 3.6. Assign it to Python variable **input**.
+Create a tensorflow constant with value 3.6. Assign it to Python variable **input**.
 
 ### Step 2:
-Create a TensorFlow Variable with initial value 2.0. Store it in Python variable **weight** ([documentation](https://www.tensorflow.org/api_docs/python/tf/Variable)). 
+Create a tensorflow Variable with initial value 2.0. Store it in Python variable **weight** ([documentation](https://www.tensorflow.org/api_docs/python/tf/Variable)). 
 
 ### Step 3:
 Multiply weight by input and store it in Python variable **output** ([documentation](https://www.tensorflow.org/api_docs/python/tf/matmul)).
