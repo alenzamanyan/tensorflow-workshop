@@ -8,8 +8,6 @@ Compare the normalized output (**actual**) to the output that our neural network
 ### Step 2:
 It may be hard to visually compare all the 10 values and have a good feel for how well we did. Thankfully, we already defined a loss function. So we can just fetch that value. What's the loss?
 
-**Make sure you've put all the code from this lesson into a Python file. It'll make it easier to quickly iterate in following steps.**
-
 ### Step 3:
 Let's tune some parameters to see if we can improve the results. Here's a list of the parameters that you can change to see the effects:
 * Number of neurons in the hidden layer.

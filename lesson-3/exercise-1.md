@@ -1,7 +1,7 @@
 ## Exercise 1: Setting up the data
 
 ### Step 0:
-Create a new file to store our Python code for this lesson. The first thing you might want to do is create a tensorflow Graph ([documentation](https://www.tensorflow.org/api_docs/python/tf/Graph)). You can then use a context manager to make sure that all operations are added to this graph (and not the default graph, [documentation](https://www.tensorflow.org/api_docs/python/tf/Graph#as_default)).
+The first thing you might want to do is create a tensorflow Graph ([documentation](https://www.tensorflow.org/api_docs/python/tf/Graph)). You can then use a context manager to make sure that all operations are added to this graph (and not the default graph, [documentation](https://www.tensorflow.org/api_docs/python/tf/Graph#as_default)).
 
 Note: Remember, you can try some of these steps in the interactive Python shell, but copy them into this file as soon as you're happy with them.
 

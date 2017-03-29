@@ -1,7 +1,5 @@
 ## Exercise 3: Learning the weights
 
-**Python tip: In the interactive shell, you can import a library once. Subsequent imports will not reload your code. For that, you can use the **reload** function ([documentation](https://docs.python.org/2/library/functions.html#reload).**
-
 We've prepared the data and built the neural network. There's not much left to do! We just have to define the loss function and the optimization technique and we're off to the races!
 
 ### Step 1:
