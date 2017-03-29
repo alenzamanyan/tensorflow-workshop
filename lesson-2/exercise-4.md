@@ -20,13 +20,16 @@ summary_writer.add_summary(sess.run(summary_w), i)
 ```
 
 ### Step 5:
+Make sure to close the file writer (i.e., summary_writer.close()). This will flush the summaries to the output file and close the file. Otherwise, you will not see your summaries in the output.
+
+### Step 6:
 In a separate terminal, navigate to the directory where we are running Python. You can use the *ls* unix command to verify that this directory contains the subdirectory that we specified in **Step 3**. Run the following command (**make sure to substitute a directory name for the placeholder**):
 
 ```bash
 > tensorboard --logdir=[REPLACE-THIS-WITH-SUBDIRECTORY-NAME]
 ```
 
-### Step 6:
+### Step 7:
 The terminal will startup TensorBoard on your machine and will make it accessible via port 6006. It should print out the following:
 
 ```bash
