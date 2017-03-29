@@ -3,13 +3,13 @@
 Printing out the result of each training step was a nice way to see the progression of the weight. But another great way to see this is by using a plot.
 
 ### Step 1:
-Create a summary operation that will output a protocol buffer with a single scalar entry (documentation). More specifically, the entry that you want to track is **output** from the previous exercise. Assign it to **summary_y**.
+Create a summary operation that will output a protocol buffer with a single scalar entry ([documentation](https://www.tensorflow.org/api_docs/python/tf/summary/scalar)). More specifically, the entry that you want to track is **output** from the previous exercise. Assign it to **summary_y**.
 
 ### Step 2:
 Like you did in **Step 1**, create another summary operation, but this one should track the **weight** variable. Assign it to **summary_w**.
 
 ### Step 3:
-Create a file writer that will write the summary values to a file (documentation). The logdir parameter can be anything that is valid unix filename. It will be used to create a subdirectory which will contain the event files that we will load into TensorBoard. Assign the file writer to a Python variable named **summary_writer**.
+Create a file writer that will write the summary values to a file ([documentation](https://www.tensorflow.org/api_docs/python/tf/summary/FileWriter)). The logdir parameter can be anything that is valid unix filename. It will be used to create a subdirectory which will contain the event files that we will load into TensorBoard. Assign the file writer to a Python variable named **summary_writer**.
 
 ### Step 4:
 Let’s re-run the training, but this time adding summary metrics to a file for subsequent visualization. In your for loop, add the following two lines, before running sess.run(train_step). Note that the variable **i** here is the one that you iterate over in your for loop. Make sure you understand the two lines that you are adding. Ask the instructor if you have questions about it.
