@@ -1,16 +1,10 @@
-## Exercise 3: Inspect the graph ([documentation](https://www.tensorflow.org/api_docs/python/tf/multiply))
+## Exercise 3: Inspect the graph
 
 ### Step 1:
-Get the default graph and store it in a Python variable. Call it **graph**.
+Loop over all the operations in the default graph ([documentation](https://www.tensorflow.org/api_docs/python/tf/get_default_graph)) and print them in full ([documentation](https://www.tensorflow.org/api_docs/python/tf/Graph#get_operations)). You can use the Python built-in print command ([documentation](https://docs.python.org/2/library/functions.html#print)). What do the operations look like? Make sure to understand all the parts of the [proto buffer](https://developers.google.com/protocol-buffers/?hl=en) that is printed out.
 
 ### Step 2:
-Print out the names of all the operations in the graph. Note that the TensorFlow name for an operation is different from the Python variable we pointed at it.
+Add another operation and give it a name (use the **name** parameter). Print out all the operations again and find the named operation in the list.
 
 ### Step 3:
-Print out each operation in full ([documentation](https://www.tensorflow.org/api_docs/python/tf/Graph#get_operation_by_name)). You can use the Python built-in print command ([documentation](https://docs.python.org/2/library/functions.html#print)). What do the operations look like? Make sure to understand all the parts of the [proto buffer](https://developers.google.com/protocol-buffers/?hl=en) that is printed out.
-
-### Step 4:
-Create a new operation in the default graph and give it a tensorflow name. Print out the operation.
-
-### Step 5:
-How many operations are in the default graph? How many are in **graph**? Is this what you would expect? Explain why.
+Create a summary file writer object

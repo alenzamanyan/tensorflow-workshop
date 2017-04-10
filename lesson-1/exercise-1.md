@@ -6,7 +6,7 @@ As is customary, let's start with a basic "Hello, world!" example.
 Import tensorflow library.
 
 ### Step 2:
-Create a constant tensorflow operation to store your "Hello, world!" string ([documentation](https://www.tensorflow.org/versions/r0.10/api_docs/python/constant_op/constant_value_tensors#constant)).
+Create a tensorflow constant to store your "Hello, world!" string ([documentation](https://www.tensorflow.org/versions/r0.10/api_docs/python/constant_op/constant_value_tensors#constant)).
 
 ### Step 3:
 Create a tensorflow session ([documentation](https://www.tensorflow.org/api_docs/python/tf/Session)).
