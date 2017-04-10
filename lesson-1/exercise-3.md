@@ -7,4 +7,4 @@ Loop over all the operations in the default graph ([documentation](https://www.t
 Add another operation and give it a name (use the **name** parameter). Print out all the operations again and find the named operation in the list.
 
 ### Step 3:
-Create a summary file writer object
+Create a summary file writer object and pass it the default graph. The first parameter tells the file writer where to write the file ([documentation](https://www.tensorflow.org/api_docs/python/tf/summary/FileWriter)). Run the code to generate the summary file.
