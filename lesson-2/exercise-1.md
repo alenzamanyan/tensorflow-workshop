@@ -7,7 +7,7 @@ Create a tensorflow constant with value 3.6 and assign it to **input**.
 Create a tensorflow Variable with initial value 2.0 and assign it to **weight** ([documentation](https://www.tensorflow.org/api_docs/python/tf/Variable)). 
 
 ### Step 3:
-Multiply weight by input and assign it to **output** ([documentation](https://www.tensorflow.org/api_docs/python/tf/matmul)).
+Multiply weight by input and assign it to **output** ([documentation](https://www.tensorflow.org/api_docs/python/tf/multiply)).
 
 ### Step 4:
 Print out the multiplication op in the graph. What are its inputs?
@@ -20,5 +20,3 @@ Create a session and run the op that you created in **Step 5**. The **weight** v
 
 ### Step 7:
 Run the op to produce the multiplication result.
-
-(Make sure to copy the successful steps you performed to a file for submission)

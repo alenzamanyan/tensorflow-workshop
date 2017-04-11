@@ -30,5 +30,3 @@ Write a for loop to iterate on the training step 20 times. You can use the range
 
 ### Step 8:
 How many steps does it take to get the exact weight (10 / 3.2 = **3.125**)?
-
-(Remember to put all your code into a separate file for submission and for future reference)
