@@ -1,7 +1,7 @@
 ## Առաջադրանք 1: Պատրաստում
 
 ### Քայլ 1:
-Ստեղծիր անփոփոխ թենզոր (tensorflow constant) 3.6 արժեքով։ Վերագրիր **input**-ին։
+Ստեղծիր անփոփոխ թենզոր (tensorflow constant) 3.2 արժեքով։ Վերագրիր **input**-ին։
 
 ### Քայլ 2:
 Ստեղծիր tensorflow Variable (փոփոխական)։ Որպես սկզբնական արժեք, օգտագործիր 2.0։ Վերագրիր **weight**-ին ([documentation](https://www.tensorflow.org/api_docs/python/tf/Variable))։

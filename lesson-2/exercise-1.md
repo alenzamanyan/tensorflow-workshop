@@ -1,7 +1,7 @@
 ## Exercise 1: Getting ready for training
 
 ### Step 1:
-Create a tensorflow constant with value 3.6 and assign it to **input**.
+Create a tensorflow constant with value 3.2 and assign it to **input**.
 
 ### Step 2:
 Create a tensorflow Variable with initial value 2.0 and assign it to **weight** ([documentation](https://www.tensorflow.org/api_docs/python/tf/Variable)). 
