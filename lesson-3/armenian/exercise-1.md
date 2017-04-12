@@ -16,7 +16,7 @@
 Ստեղծի մի հատ էլ tensorflow placeholder որի մեջ ևս կպահենք float32 **output** տվյալներ։
 
 ### Քայլ 5:
-Այս տեղապահները օգտագործելու ենք որպեսզի նեյրոնային ցանցը սնենք տվյալներով։ tf.Session-ի run() ֆունկցիան ունի feed_dict պարամետր ([documentation](https://www.tensorflow.org/versions/master/api_docs/python/client/session_management#Session.run)). Պարամետրին պիտի տանք Python dictionary ([documentation](https://docs.python.org/3/tutorial/datastructures.html#dictionaries))։ Ստեղծի dictionary ու մեջը պահի հետևյալ երկու key-value զույգերը։
+Այս տեղապահները օգտագործելու ենք որպեսզի նեյրոնային ցանցը սնենք տվյալներով։ tf.Session-ի run() ֆունկցիան ունի feed_dict պարամետր ([documentation](https://www.tensorflow.org/api_docs/python/tf/Session#run)). Պարամետրին պիտի տանք Python dictionary ([documentation](https://docs.python.org/3/tutorial/datastructures.html#dictionaries))։ Ստեղծի dictionary ու մեջը պահի հետևյալ երկու key-value զույգերը։
 * Առաջինի key-ն **input** թենզորն է որը ստեղծել ենք **Քայլ 3**-ում։ Առաջինի value-ն Python list-ն է որը ստեղծել ենք **Քայլ 1**-ում.
 * Երկրորդի key-ն **output** թենզորն է որը ստեղծել ենք **Քայլ 4**-ում։ Երկրորդի value-ն Python list-ն է որը ստեղծել ենք **Քայլ 2**-ում.
 
