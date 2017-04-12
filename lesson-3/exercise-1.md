@@ -3,8 +3,6 @@
 ### Step 0:
 The first thing you might want to do is create a tensorflow Graph ([documentation](https://www.tensorflow.org/api_docs/python/tf/Graph)). You can then use a context manager to make sure that all operations are added to this graph (and not the default graph, [documentation](https://www.tensorflow.org/api_docs/python/tf/Graph#as_default)).
 
-Note: Remember, you can try some of these steps in the interactive Python shell, but copy them into this file as soon as you're happy with them.
-
 ### Step 1:
 Create a Python list to encode the input features (study time, sleep time) described in the README file. The dimensions of the list should be 10x2 (10 examples and 2 features). In other words, you need to use nesting to make the list look like a matrix.
 
