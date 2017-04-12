@@ -16,7 +16,7 @@ Create a tensorflow placeholder to hold float32 **input** data ([documentation](
 Create another tensorflow placeholder to hold float32 **output** data.
 
 ### Step 5:
-We're going to use these placeholders to feed data into our neural network. We do this by using a Python dictionary ([documentation](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)). Look for the feed_dict parameter of the tf.Session's run() function ([documentation](https://www.tensorflow.org/versions/master/api_docs/python/client/session_management#Session.run)). Define a dictionary (call it **feed_dict**) and store two elements in it.
+We're going to use these placeholders to feed data into our neural network. We do this by using a Python dictionary ([documentation](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)). Look for the feed_dict parameter of the tf.Session's run() function ([documentation](https://www.tensorflow.org/api_docs/python/tf/Session#run)). Define a dictionary (call it **feed_dict**) and store two elements in it.
 * The key for the first element is the **input** tensor we defined in **Step 3**. The value for the first element is the raw input data we defined in **Step 1**.
 * The key for the second element is the **output** tensor we defined in **Step 4**. The value for the second element is the raw output data we defined in **Step 2**.
 
