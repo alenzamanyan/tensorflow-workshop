@@ -1,28 +1,26 @@
-## Առաջադրանք 4: Tuning and Evaluation
+## Առաջադրանք 4: Կարգավորում և ստուգոմ
 
-**Note: Don't forget about feed_dict in the steps below. The network doesn't have any built-in data, so you need to feed in data every time you try to fetch a result that depends on the input.**
+**Ցանցը չունի տվյալներ։ Ամեն անգամ session.run() անելիս, պիտի մտածենք տվյալներ պետք է մուտքագրենք feed_dict արգումենտով թե ոչ։**
 
 ### Քայլ 1:
-Compare the normalized output (**actual**) to the output that our neural network now computes based on the learned weights. Are the results close?
+Նորմալիզացված գնահատականները համեմատի գուշակած գնահատականներին։ Թվերը մո՞տ են իրար թե՞ ոչ։
 
 ### Քայլ 2:
-It may be hard to visually compare all the 10 values and have a good feel for how well we did. Thankfully, we already defined a loss function. So we can just fetch that value. What's the loss?
+Կորուստի (loss) արժեքը ի՞նչ է։
 
 ### Քայլ 3:
-Let's tune some parameters to see if we can improve the results. Here's a list of the parameters that you can change to see the effects:
-* Number of neurons in the hidden layer.
-* How you initialize the weights - i.e., tf.zeros, tf.random_normal, or values from some other distribution.
-* The learning rate for our stochastic gradient descent algorithm.
-* You can even swap out GradientDescentOptimizer for another optimizer ([documentation](https://www.tensorflow.org/api_guides/python/train)).
-* Play around with the number of epochs. Are 1000 steps enough? How long does 10000 steps take?
+Մի քիչ կարգավորենք մեր ցանցը։ Հետևյալ պարամետրները կարող ենք փոխենք որ բարելավենք մեր մոդելը։ Այս տեսակի պարամետրները կոչվում են hyper-parameter։
+* Թաքնված շերտի նեյրոնների քանակը
+* Variable-ների սկզբնական արժեքները (tf.zeros, tf.random_normal, կամ մի ուրիշ ձև բաշխված թվեր)։
+* Gradient descent-ի ուսուցման քայլի չափը (learning rate)
+* GradientDescentOptimizer-ի փոխարեն կարող ես օգտագործել մի ուրիշ օպտիմիզատոր ([documentation](https://www.tensorflow.org/api_guides/python/train)).
+* Քայլերի քանակը. 1000 քայլը բավարա՞ր է։ Ինչքա՞ն ժամ է տեվում 10000 քայլը կատարել։
 
-Once you've found a set of parameters that minimize the loss, we can move on to the last stage of evaluation.
-
-### Note:
-You might say that of course our neural network performs well on this data - after all, this is the same data that we trained on. Well, that's a very astute observation. In fact, that's a common problem in machine learning. If we train and evaluate using the same data, we're bound to have success. The real test is being able to do well on data we haven't seen yet. So a common approach is to separate our data into train and test datasets.
+### Նշում:
+Ի՞նչ խնդիրներ ունի այս ստուգման մեթոդը։ Ստուգման համար օգտագործում ենք նույն տվյալները որ օգտագործել էինք ուսուցման ընթացքում։ Պարզ չի՞ որ մեր մոդելը լավ կաշխատի։ Մեքենայական ուսուցման մեջ շատ լուրջ խնդիր է սա։ Պիտի տվյալները բաժանենք երկու կամ երեք մասի որ կարողանանք անկախ ձևով ուսուցանենք ու ստուգման փուլերի ենթարկենք մեր մոդելը։
 
 ### Քայլ 4:
-Split the data into two sets (with say, 5 examples in each). Use one of the sets for training and the other set for testing. Do you see a difference in the loss for the **train** set versus the loss for the **test** set?
+Տվյալները կիսի երկու մասի (ամեն մեկում պահի 5 օրինակ). Մեկը օգտագործի ուսուման համար իսկ մյուսը ստուգման համար։ Կորուստը ինչքա՞ն է երբ ուսուցման տվյալներն ես օգտագործում։ Իսկ ինչքա՞ն է երբ ստուգման տվյալներն ես օգտագործում։
 
 ### Քայլ 5:
-If you have time, see if you can run the model on new data to gain some insight about how you should plan for your future tests. For instance, if it's 11pm, you have a test tomorrow at 8am, and you haven't studied at all, what should you do?
+Մոդելը օգտագործի մի նոր իրավիճակում որոշում կայացնելու նպատակով։ Օրինակ, ենթադրենք ժամը 23:00-ն է ու վաղը ժամը 08:00-ին քննություն պիտի հանձնես, բայց դեռ չես սկսել պարապել քննության համար։ Ի՞նչ կանես որ լավագույն արդյունքը ստանաս։

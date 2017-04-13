@@ -1,39 +1,34 @@
 ## Առաջադրանք 3: Սովորում ենք կշիռները
 
-We've prepared the data and built the neural network. There's not much left to do! We just have to define the loss function and the optimization technique and we're off to the races!
+Արդեն պատրաստել ենք տվյալները ու կառուցել ենք նեյրոնային ցանցը։ Շատ բան չի մնացել։ Ոնց որ արել նախքին դասերում, ընդամենը պիտի սահմանենք նպատակային (loss) ֆունկցիան ու օպիտիզատոր օգտագործենք որ կորստի արժեքը հասցնենք նվազագույնի։
 
 ### Քայլ 1:
-The loss function is going to be the sum of squared differences between the actual and predicted value for each example. Here is the formula:
+Որպես նպատակային ֆունկցիան, օգտագործելու ենք գուշակած ու իրական գնահատականների տարբերությունների քարակուսիների միջինը։ Ավելի հստակ, օգտագործելու ենք հետևյալ բանաձևը։
 
 **loss = (1/num_examples) * Σ(actual - predicted)<sup>2</sup>**
 
-In our case, the **actual** is the normalized output we set up in **Exercise 1**. The **predicted** output is the same as **activation_2** from **Exercise 2**. **num_examples** is the number of examples in our dataset.
+**actual**-ը նորմալիզացված output-ն է որը ստեղծել են **Առաջադրանք 1**-ում. **predicted**-ը հավասար է **Առաջադրանք 2**-ի **activation_2**-ին։ **num_examples**-ը օրինակների քանակն է (այս դեպքում ունենք 10 օրինակ)։
 
-Now, you may be thinking, "what's that Σ symbol?" This is sum over all examples. An easy way to compute this in tensorflow is using tf.reduce_sum ([documentation](https://www.tensorflow.org/api_docs/python/tf/reduce_sum)).
+Որպեսզի ստանանք բոլոր օրինակների գումարը (Σ), կարող ենք օգտագործել tensorflow-ի tf.reduce_sum ֆունկցիան ([documentation](https://www.tensorflow.org/api_docs/python/tf/reduce_sum)).
 
 ### Քայլ 2:
-We have the loss function, which tells us how far we are from the actual output. So we need an optimizer that can modify the variables of the system (namely, the **weights** and **biases**) and to minimize the loss. Create a GradientDescentOptimizer and call its minimize() function, passing it the **loss** we defined in **Step 1**. You can go back to **Lesson 2 - Exercise 3** to refresh your memory on how to do this. What learning rate did you choose?
+Մեզ պետք է օպտիմիզատոր որը փոփոխականները (**կշիռները** ու **շեղումները**) փոփոխելով կորուստը կհասցնի նվազագույնի։ Ստեղծի GradientDescentOptimizer օբյեկտ (կոնստրուկտորին պիտի տանք learning_rate արգումենտ)։ Օպտիմիզատոր օբյեկտը ունի minimize() մեթոդ, որը որպես արգումենտ ընդունում է նպատակային ֆունկցիա ու վերադարցնում է գործողություն։ Այդ գործողությունը կատարելով մի քայլ կմոտենանք մեր ուզեցած արդյունքին։
 
 ### Քայլ 3:
-Create a context for the session. Don't forget to tab-indent for the next few steps.
+**with**-ով սեսիա ստեղծի։ Այդ կոնտեքստի մեջ ենք կատարելու հետևյալ քայլերը։
 
 ```python
 with tf.Session() as sess:
 ```
 
 ### Քայլ 4:
-Initialize all the tensorflow variables.
+tf.global_variables_initializer() գործողությունը կատարի որպեսզի սկզբնական արժեքները վերագրվեն բոլոր Variable-ներին։
 
 ### Քայլ 5:
-Before we train, let's take a look at the output of the neural network based on the zeroed or random weights we've assigned as initial values. It should be nothing near the actual output.
+Ցիկլով 10000 անգամ կատարի **Քայլ 2**-ում ստեղծած ուսուցման գործողությունը. Հիշի որ պիտի **Առաջադրանք 1**-ում ստեղծած dictionary-ն օգտագործենք ցանցը տվյլաներով սնելու համար։
 
 ```python
-  print(sess.run(activation_2, feed_dict = feed_dict))
+  sess.run(train_step, feed_dict = feed_dict)
 ```
 
-Note: Remember the **feed_dict** dictionary that we defined in **Exercise 1**. That's what we're using here to feed data into the network.
-
-### Քայլ 6:
-An **epoch** is a single run of the optimization method. Use a for loop to run 10000 epochs of the training step that we defined in **Step 2**. Don't forget to feed our data into the network.
-
-**Congratulations! You've built and trained your first neural network.**
+**Կեցցե՛ս։ Առաջին անգամ կառուցել ու ուսուցանել էս նեյրոնային ցանց։**

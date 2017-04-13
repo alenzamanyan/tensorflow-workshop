@@ -9,7 +9,7 @@
 ### Քայլ 1:
 Input շերտը թաքնված շերտին կապվում է 6 կողով։ Ամեն մի կողը ունի կշիռ։ Պիտի զանգված ստեղծենք որ այս 6 կշիռնեը պահի։ Զանգվածի ձևը պիտի համապատասխանի **Առաջադրանք 1**-ում ստեղծած թենզորի չափին, որպեսզի կարողանանք բազմապատկել։
 
-**Hint: An easy way to think about the dimensions of the weight array that we need is to use the number of nodes in the input layer as the size of the first dimension and the number of nodes in the hidden layer as the size of the second dimension.**
+**Կշիռների զանգվածի տողերի քանակը հավասար են input շերտի գագաթների քանակին։ Զանգվածի սյուների քանաքը հավասար է թաքվնած շերտում գտվող գագաթների քանակին։**
 
 Կշիռները փոփոխվող մասն են մեր մոդէլի։ Դրա համար պիտի կշիռների համար օգտագործենք tf.Variable ([documentation](https://www.tensorflow.org/api_docs/python/tf/Variable)). Որպես սկզբնական արժեք կարող ենք օգտագործենք կամ զրոներ ([documentation](https://www.tensorflow.org/api_docs/python/tf/zeros) կամ էլ պատահական արժեքներ ([documentation](https://www.tensorflow.org/api_docs/python/tf/random_normal)). Վերագրի **weights_1** փոփոխականին։
 
